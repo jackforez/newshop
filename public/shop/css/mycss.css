@@ -1,0 +1,27 @@
+
+#xemto{
+    position:absolute;
+    border:1px solid #ccc;
+    background:#333;
+    padding:5px;
+    display:none;
+    color:#fff;
+}
+.my-modal{
+  background-color: black;
+}
+.my-modal-dialog {
+    width: 100%;
+    margin: 0px auto;
+    background-color: red;
+  }
+  
+.my-modal-content {
+    height: auto;
+    height: 100%;
+    border-radius: 0;
+    background-color: green;
+  }
+.test{
+    color: green;
+}

@@ -1,0 +1,21 @@
+
+#xemto{
+    position:absolute;
+    border:1px solid #ccc;
+    background:#333;
+    padding:5px;
+    display:none;
+    color:#fff;
+}
+.my-modal-dialog {
+    width: 50%;
+    height: auto;
+    margin:50px auto;
+    background-color: red;
+  }
+  
+  .my-modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+  }
