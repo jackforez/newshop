@@ -49,7 +49,7 @@
 <div class="row isotope-grid">
 	@foreach($sanpham as $sp)
 	<div class="modal" id="{{$sp->id}}" style="background-color:black;z-index:9999;">
-		<div class="modal-dialog modal-lg w-full">
+		<div class="modal-dialog modal-lg container-fluid">
 			<div class="modal-content">
 				<div class="modal-body">
 					<!-- <div class="row">
@@ -119,9 +119,40 @@
 							<div class="col-6">
 								<img src="upload/{{$sp->img}}" alt="">	
 							</div>
-							<div class="col-4">
-
+							<div class="col-md-4 col-lg-4 p-b-30">
+							<div class="p-r-50 p-t-5 p-lr-0-lg">
+								<h4 class="mtext-105 cl2 js-name-detail p-b-14">
+									{{$sp->tensp}}
+								</h4>
+								<span class="mtext-106 cl2">
+								{{$sp->giasp}}
+								</span>
+								<p class="stext-102 cl3 p-t-23">
+									{{$sp->mota}}
+								</p>
+								<div class="p-t-33">
+									<div class="flex-c-m p-b-10">
+										<div class="size-204 flex-w flex-c-m respon6-next" >
+											<div class="wrap-num-product flex-w m-tb-10" >
+												<div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
+													<i class="fs-16 zmdi zmdi-minus"></i>
+												</div>
+												<input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product" value="1">
+												<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+													<i class="fs-16 zmdi zmdi-plus"></i>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="flex-w flex-c-m">
+									<button class="btn btn-primary hov-btn1 p-lr-15 trans-04 js-addcart-detail form-control" >
+										Thêm vào giỏ hàng
+									</button>
+								</div>
 							</div>
+						</div>
 						</div>
 					</div>
 				</div>

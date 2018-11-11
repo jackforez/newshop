@@ -23,6 +23,7 @@ Route::group(['prefix'=>'page'],function(){
 
 Route::group(['prefix'=>'cart'],function(){
     Route::get('them/{id}','cCart@getAdd');
+    Route::get('danhsach','cCart@getList');
 });
 Route::group(['prefix'=>'admin'],function(){
     Route::group(['prefix'=>'loaisp'],function(){

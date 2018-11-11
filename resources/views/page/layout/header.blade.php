@@ -33,8 +33,8 @@
                   <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
                      <i class="zmdi zmdi-search"></i>
                   </div>
-                  <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="{{Cart::total()}}">
-                     <i class="zmdi zmdi-shopping-cart"></i>
+                  <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="{{Cart::count()}}">
+                      <a href="cart/danhsach"><i class="zmdi zmdi-shopping-cart"></i></a>
                   </div>
                   <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
                   <i class="zmdi zmdi-favorite-outline"></i>
@@ -47,7 +47,6 @@
       <div class="wrap-header-mobile">
          <!-- Logo moblie -->		
          <div class="logo-mobile">
-            <!-- <a href="index.html"><img src="shop/images/icons/logo-01.png" alt="IMG-LOGO"></a> -->
             vòng tay phong thủy
          </div>
          <!-- Icon header -->
@@ -105,7 +104,7 @@
       </div>
    </header>
    <!-- Cart -->
-   <div class="wrap-header-cart js-panel-cart">
+   <!-- <div class="wrap-header-cart js-panel-cart">
       <div class="s-full js-hide-cart"></div>
       <div class="header-cart flex-col-l p-l-65 p-r-25">
          <div class="header-cart-title flex-w flex-sb-m p-b-8">
@@ -144,4 +143,5 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
+@include('page.layout.cart')

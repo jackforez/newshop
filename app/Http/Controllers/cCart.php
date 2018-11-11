@@ -8,10 +8,13 @@ use App\mSanpham;
 class cCart extends Controller
 {
     public function getAdd($id){
-        // $sanpham = mSanpham::find($id);
-        // Cart::add(['id' => $id, 'name' => $sanpham->tensp, 'qty' => 1, 'price' => $sanpham->giasp, 'options' => ['img' => $sanpham->img]]);
-        // return back();
+        $sanpham = mSanpham::find($id);
+        Cart::add(['id' => $id, 'name' => $sanpham->tensp, 'qty' => 1, 'price' => $sanpham->giasp, 'options' => ['img' => $sanpham->img]]);
+        return back();
+      
+    }
+    public function getList(){
         $data = Cart::content();
-        dd($data);
+        return view('page.layout.cart',['data'=>$data]);
     }
 }
