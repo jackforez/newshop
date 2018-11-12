@@ -1,5 +1,7 @@
 @extends('page.layout.index')
+@include('page.layout.cart')
 @section('content')
+
 <!-- Slider -->
 <section class="section-slide">
 	<div class="wrap-slick1">
@@ -110,14 +112,18 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-2">
-								<ul>
-									<li><img src="upload/{{$sp->img}}" alt="" width="75px"></li>
-									<li><img src="upload/{{$sp->img}}" alt="" width="75px"></li>
-									<li><img src="upload/{{$sp->img}}" alt="" width="75px"></li>
-								</ul>
+								<div class="col border border-primary" style="height:33%;">
+									<img src="upload/{{$sp->img}}" alt="" width="100%" style="margin:auto;">
+								</div>
+								<div class="col border border-primary">
+									<img src="upload/{{$sp->img1}}" alt=""width="100%">
+								</div>
+								<div class="col border border-primary">
+									<img src="upload/{{$sp->img2}}" alt=""width="100%">
+								</div>
 							</div>
-							<div class="col-6">
-								<img src="upload/{{$sp->img}}" alt="">	
+							<div class="col-6 img-responsive">
+								<img src="upload/{{$sp->img}}" alt="IMG_PRODUCT" width="100%">	
 							</div>
 							<div class="col-md-4 col-lg-4 p-b-30">
 							<div class="p-r-50 p-t-5 p-lr-0-lg">

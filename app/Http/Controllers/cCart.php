@@ -15,6 +15,6 @@ class cCart extends Controller
     }
     public function getList(){
         $data = Cart::content();
-        return view('page.layout.cart',['data'=>$data]);
+        return view('page.mycart',['data'=>$data]);
     }
 }

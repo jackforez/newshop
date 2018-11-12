@@ -11,23 +11,19 @@
             </div>
          </div>
          <div class="header-cart-content flex-w js-pscroll">
-         @foreach($data as $dt)
             <ul class="header-cart-wrapitem w-full">
                <li class="header-cart-item flex-w flex-t m-b-12">
                   <div class="header-cart-item-img">
-                     <img src="upload/0aqn__1 (13).jpg" alt="IMG">
+                     <img src="upload" alt="IMG">
                   </div>
                   <div class="header-cart-item-txt p-t-8">
                      <a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-                     	<h5>{{$dt->id}}</h5>
                      </a>
                      <span class="header-cart-item-info">
-                        {{$dt->price}}
                      </span>
                   </div>
                </li>
             </ul>
-        @endforeach
             <div class="w-full">
                <div class="header-cart-total w-full p-tb-40">
                   Tổng thiệt hại: 100K
